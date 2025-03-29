@@ -1,6 +1,8 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import SearchOperation from './views/SearchOperations.vue'
+import About from './components/About.vue'
+import './assets/main.css';
+import SearchView from './views/SearchView.vue';
+
 </script>
 
 <template>
@@ -8,16 +10,11 @@ import SearchOperation from './views/SearchOperations.vue'
     <img alt="Computer logo" class="logo" src="@/assets/outline-pc.gif" width="250" height="200" />
 
     <div class="wrapper">
-      <SearchOperation msg="Interactive API" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+      <About msg="Interactive API" />
     </div>
   </header>
 
-  <RouterView />
+  <SearchView />
 </template>
 
 <style scoped>
