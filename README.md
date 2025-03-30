@@ -1,4 +1,4 @@
-![logoIntuitive](https://github.com/ingrydf12/intuitive-challenge/blob/master/TesteApi4/front/src/assets/logoIntuitiveWhite.png?raw=true)
+<img src="https://github.com/ingrydf12/intuitive-challenge/blob/master/TesteApi4/front/src/assets/logoIntuitiveWhite.png?raw=true)" width="200" height="auto">
 
 # Challenge: IntuitiveCare
 
