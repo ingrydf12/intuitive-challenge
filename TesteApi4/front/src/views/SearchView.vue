@@ -42,24 +42,32 @@ export default {
     const busca = ref("");
     const resultados = ref([]);
     const carregando = ref(false);
+    let debounceTimer = null;
 
     const buscar = async () => {
-  if (busca.value.length < 2) {
-    resultados.value = [];
-    return;
-  }
+      if (busca.value.length < 2) {
+        resultados.value = [];
+        return;
+      }
 
-  carregando.value = true;
+      carregando.value = true;
 
-  const response = await ApiService.search(busca.value);
-  console.log("Dados recebidos:", response);
-  resultados.value = response;
+      try {
+        const response = await ApiService.search(busca.value);
+        console.log("Dados recebidos:", response);
+        resultados.value = response;
+      } catch (error) {
+        console.error("Erro na busca:", error);
+        resultados.value = [];
+      }
 
-  carregando.value = false;
-};
+      carregando.value = false;
+    };
 
-
-    watch(busca, buscar);
+    watch(busca, () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(buscar, 200);
+    });
 
     return {
       busca,
