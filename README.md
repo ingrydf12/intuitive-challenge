@@ -107,6 +107,7 @@ Veja a aplicação e interaja por meio deste [link](https://intuitive-challenge.
 
 **API**: https://intituivechallenge.onrender.com
 
+**Documentação API:** https://documenter.getpostman.com/view/43584029/2sB2cPk6B6
 
 ## Como rodar localmente
 

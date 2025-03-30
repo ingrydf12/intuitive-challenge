@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "ffe98193-e5df-4252-b0e7-a12e00f9c52e",
 		"name": "intuitiveCare-API4",
+		"description": "API em Python e FastAPI para challenge do processo seletivo de Engenharia de Software da IntuitiveCare, utilizando Vue.js e Render.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "43584029"
 	},
@@ -10,7 +11,8 @@
 			"name": "searchOperadoras",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"description": "## FUNCIONAMENTO\n\nRetorna dados ao usuário a lista de operadoras ativas na ANS com base em uma consulta considerando o termo persquisado por ele e nos nome fantasia e razão social das operadoras.\n\n**Method:** GET\n\n**Endpoint**: `{{urlServer}}/api/search`\n\n**Parameters**: q=$input\n\n<img src=\"https://content.pstmn.io/9c6b8460-c765-4c13-ba28-25c65296088a/aW1hZ2UucG5n\" alt=\"Example%20200%20SUCESS\" height=\"232\" width=\"497\">"
 			},
 			"response": []
 		}
