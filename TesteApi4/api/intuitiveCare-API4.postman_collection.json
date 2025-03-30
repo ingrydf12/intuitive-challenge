@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "ffe98193-e5df-4252-b0e7-a12e00f9c52e",
+		"name": "intuitiveCare-API4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43584029"
+	},
+	"item": [
+		{
+			"name": "searchOperadoras",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "urlServer",
+			"value": "http://127.0.0.1:5000",
+			"type": "default"
+		}
+	]
+}
