@@ -13,14 +13,21 @@ import SearchView from './views/SearchView.vue';
       <About msg="Interactive API" />
     </div>
   </header>
-
+<main> 
   <SearchView />
+</main>
+ 
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
+  padding-top: 5rem;
+}
+
+main{
+  padding-top: 5rem;
 }
 
 .logo {
@@ -53,10 +60,10 @@ nav a:first-of-type {
   border: 0;
 }
 
+
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
 

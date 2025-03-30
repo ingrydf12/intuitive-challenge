@@ -22,9 +22,9 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
+  main {
     display: flex;
-    place-items: center;
+    flex-direction: column;
   }
 
   #app {
