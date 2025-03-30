@@ -1,8 +1,7 @@
 <script setup>
-import About from './components/About.vue'
-import './assets/main.css';
-import SearchView from './views/SearchView.vue';
-
+import About from "./components/About.vue";
+import "./styles/main.css";
+import SearchView from "./views/SearchView.vue";
 </script>
 
 <template>
@@ -13,10 +12,9 @@ import SearchView from './views/SearchView.vue';
       <About msg="Interactive API" />
     </div>
   </header>
-<main> 
-  <SearchView />
-</main>
- 
+  <main>
+    <SearchView />
+  </main>
 </template>
 
 <style scoped>
@@ -26,7 +24,7 @@ header {
   padding-top: 5rem;
 }
 
-main{
+main {
   padding-top: 5rem;
 }
 
@@ -59,7 +57,6 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
-
 
 @media (min-width: 1024px) {
   header {
