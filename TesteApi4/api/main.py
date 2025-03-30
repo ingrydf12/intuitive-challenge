@@ -14,19 +14,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+current_dir = os.getcwd()
+csv_path = os.path.join("data", "Relatorio_cadop.csv")
+
 # Tenta carregar o arquivo de relatório
 try:
-    data = pd.read_csv("api/data/Relatorio_cadop.csv", sep=";", encoding="utf-8")
+    data = pd.read_csv(csv_path, sep=";", encoding="utf-8")
     if data.empty:
         print("O arquivo CSV está vazio.")
     else:
         print("Arquivo CSV carregado com sucesso.")
 except FileNotFoundError:
-    print("Arquivo não encontrado. Verifique o caminho.")
+    print(f"Arquivo não encontrado: {csv_path}. Verifique o caminho.")
     data = pd.DataFrame()
 except Exception as e:
     print(f"Erro ao carregar o CSV: {e}")
     data = pd.DataFrame()
+
 
 # Caso venha vazio
 data = data.fillna("")
